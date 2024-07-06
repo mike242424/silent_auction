@@ -7,9 +7,9 @@ still_biding = True
 def calculate_winner():
   winner_name = ''
   winner_bid = 0
-  for name, bid in dictionary.items():
-    if(bid > winner_bid):
-      winner_bid = bid
+  for name in dictionary:
+    if(dictionary[name] > winner_bid):
+      winner_bid = dictionary[name]
       winner_name = name
   print(f"The winner is {winner_name} with a bid of {winner_bid}")
 
